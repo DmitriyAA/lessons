@@ -1,0 +1,22 @@
+@import url("reset.css");
+h1 {
+    color: darkblue;
+}
+h2 {
+    color: darkkhaki;
+}
+h3 {
+    color: rgb(170, 160, 10);
+}
+div.content {
+    color: rgb(187, 183, 193);
+    }
+#definition {
+    color: red;
+}
+p.power {
+    color: greenyellow;
+}
+p.location {
+    color: darkmagenta;
+}
