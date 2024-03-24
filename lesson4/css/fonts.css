@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Causten-Thin-Oblique";
+    src: url(../fonts/Causten-Thin-Oblique.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Causten-Thin";
+    src: url(../fonts/Causten-Thin.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Proximanova";
+    src: url(../fonts/proximanova_regular.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

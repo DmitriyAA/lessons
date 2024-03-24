@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Truculenta:100,200,300,regular,500,600,700,800,900);
+@import url(fonts.css);
+@import url("reset.css");
+
+body {
+    font-family: "Causten-Thin", sans-serif;
+    font-weight: 500;     
+}
+.title {
+    font-family: Truculenta;
+    font-weight: 800;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px red;
+    text-decoration: line-through;
+    text-decoration-color: blue;
+    text-decoration-style: dashed;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 300%; /* 60/20 */
+    letter-spacing: 20px;
+    word-spacing: 20px;
+    /* white-space: nowrap; */
+}
+.text {
+    font-family: Causten-Thin-Oblique;
+    font-weight: 700;
+    text-align: left;
+}
+.list {
+    font-family: Causten-Thin-Oblique;
+    font-weight: 700;
+    font-size: 10px;
+    text-align: right;
+    letter-spacing: 10px;
+}
+.first-text {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+    word-spacing: 20px;
+}
+.second-text {
+    color: rgb(28, 28, 44, 0.5);
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration-color: chartreuse;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+}
+div.second-part {
+    font-family: "Proximanova", sans-serif;
+    font-weight: 400;
+    color: #2b2929;
+    font-style: normal;
+    text-transform: none;
+}
+.sub-title_1 { 
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;    
+}
+.text1 {
+    text-align: left;
+    line-height: 30px;
+}
+.text2 {
+    font-size: 20px;
+    text-align: left;
+    line-height: 28px;
+}
