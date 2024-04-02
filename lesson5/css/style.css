@@ -28,11 +28,11 @@ div.first-part {
     margin: 0 auto;
 }
 .ball {
-    min-width: 10%;
-    height: 300px;
+    width: 250px;
+    height: 400px;
     padding: 10px;
     display: inline-block;
-    margin: 40px 75px;
+    margin: 40px 3%;
 }
 .name-product {
     font-family: Quicksand, sans-serif;
