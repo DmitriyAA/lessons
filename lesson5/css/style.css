@@ -19,14 +19,12 @@ body {
 }
 .content {
     margin: 0 auto;
-
 }
 .link {
-    margin: 0px 1%;
+    margin: 0px 10px;
 }
 div.first-part {
-    margin: 100%;
-    overflow: hidden;
+
 }
 .ball {
     min-width: 10%;
