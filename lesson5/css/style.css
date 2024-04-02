@@ -15,15 +15,17 @@ body {
     text-align: center;
     color: brown;
     padding: 20px 10px;
-    margin-left: 200px;
-    margin-right: 200px;
     margin-bottom: 50px;
+}
+.content {
+    margin: 0 auto;
+
 }
 .link {
     margin: 0px 1%;
 }
 div.first-part {
-    margin: 0 auto;
+    margin: 100%;
     overflow: hidden;
 }
 .ball {
