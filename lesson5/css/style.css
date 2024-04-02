@@ -30,7 +30,7 @@ div.first-part {
 .ball {
     width: 250px;
     height: 400px;
-    padding: 10px;
+    padding: 2px;
     display: inline-block;
     margin: 40px 3%;
 }
@@ -53,7 +53,7 @@ div.first-part {
 .price-product {
     font-family: Quicksand;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 24px;
     color: red;
     text-shadow: 1px 1px black;
     text-align: center;
