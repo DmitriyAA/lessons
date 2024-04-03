@@ -75,6 +75,7 @@ div.second-part {
     font-style: normal;
     text-transform: none;
     max-width: 1070px;
+    height: auto;
     padding: 20px 0px;
     margin: 0 auto;
 }
@@ -138,6 +139,7 @@ div.list {
 .krovato-is {
     font-family: "Proximanova", sans-serif;
     max-width: 1290px;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
 }
