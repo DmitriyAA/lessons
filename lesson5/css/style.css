@@ -6,7 +6,8 @@
 
 body {
     font-family: "Proximanova", sans-serif;
-    font-weight: 500;     
+    font-weight: 500;
+    width: 2120px;     
 }
 .header {
     font-family: "Causten";
@@ -138,10 +139,11 @@ div.list {
 }
 .krovato-is {
     font-family: "Proximanova", sans-serif;
-    max-width: 1290px;
+    width: 1390px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
+    
 }
 .definition {
     width: 238px;
