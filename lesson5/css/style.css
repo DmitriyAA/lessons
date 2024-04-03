@@ -18,6 +18,7 @@ body {
     color: brown;
     padding: 20px 10px;
     margin-bottom: 50px;
+    margin: 0 auto;
 }
 .content {
     margin: 0 auto;
@@ -33,7 +34,7 @@ div.first-part {
 .ball {
     width: 250px;
     height: 400px;
-    padding: 2px;
+    padding: 1%;
     display: inline-block;
     margin: 0 auto;
 }
@@ -140,7 +141,7 @@ div.list {
 }
 .krovato-is {
     font-family: "Proximanova", sans-serif;
-    width: 1390px;
+    max-width: 1390px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -188,7 +189,7 @@ div.list {
     line-height: 30px;
 }
 .collections {
-    width: 1920px;
+    max-width: 1920px;
     height: 350px;
     margin: 0 auto;
     margin-bottom: 60px;
