@@ -7,7 +7,7 @@
 body {
     font-family: "Proximanova", sans-serif;
     font-weight: 500;
-    min-width: 760px;
+    max-width: 100%;
     padding: 30px 20px;
 }
 .header {
@@ -188,8 +188,10 @@ div.list {
     line-height: 30px;
 }
 .collections {
+    width: 1920px;
+    height: 350px;
     margin: 0 auto;
-    
+    margin-bottom: 60px;
 }
 
 .head-text {
@@ -200,10 +202,11 @@ div.list {
     color: #000;
     line-height: normal;
     text-transform: capitalize;
-    width: 1113px;
+    margin: 0 auto;
+    width: 1080px;
     height: 59px;
     margin-bottom: 60px;
-    margin: 0 auto;
+    
 }
 .follow {
     margin: 0 auto;
@@ -219,6 +222,7 @@ div.list {
 .foto-band {
     width: 200px;
     height: 200px;
+    display: inline-block;
     margin: 0px 12px;
     
 }
