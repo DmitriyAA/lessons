@@ -50,9 +50,6 @@ div.first-part {
     height: 180px;
     padding: 5px;
     margin: 10px 35px;
-    
-   
-
 }
 .price-product {
     font-family: Quicksand;
@@ -141,7 +138,7 @@ div.list {
 }
 .krovato-is {
     font-family: "Proximanova", sans-serif;
-    max-width: 1390px;
+    max-width: 1270px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -189,7 +186,7 @@ div.list {
     line-height: 30px;
 }
 .collections {
-    max-width: 1920px;
+    max-width: 1360px;
     height: 350px;
     margin: 0 auto;
     margin-bottom: 60px;
@@ -203,21 +200,21 @@ div.list {
     color: #000;
     line-height: normal;
     text-transform: capitalize;
+    width: 1020px;
     margin: 0 auto;
-    width: 1080px;
     height: 59px;
     margin-bottom: 60px;
     
 }
 .follow {
     margin: 0 auto;
-    width: 1920px;
+    width: 1360px;
     height: 300px;
    
 }
 .pictures {
     margin: 0 auto;
-    width: 1420px;
+    width: 1380px;
     
 }
 .foto-band {
