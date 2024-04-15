@@ -274,6 +274,10 @@ div.text1 {
     background-color: white;
     border-radius: 10px;
 }
+.kid {
+    max-width: 515px;
+    width: 100%;
+}
 .coral {
     max-width: 1920px;
     width: 100%;
