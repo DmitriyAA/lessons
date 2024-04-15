@@ -328,7 +328,7 @@ div.text1 {
     margin-bottom: 52px;
 }
 .coral .button {
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 29px;
     font-weight: 400;
     color: white;
@@ -339,4 +339,14 @@ div.text1 {
 }
 .icon {
     margin: 9px 8px 9px 0px;
+}
+.footer {
+    max-width: 1040px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 50px 300px;
+    text-align: center;
 }
