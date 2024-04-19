@@ -1,0 +1,260 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url(fonts.css);
+@import url("reset.css");
+
+body {
+    font-family: "Proximanova", sans-serif;
+    font-weight: 500;
+    max-width: 100%;    
+}
+.header {
+    font-family: "Causten", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: brown;
+    background-color: bisque;
+    padding: 20px 10px;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    border-bottom: 10px dashed green;
+    border-top: 10px dashed green;
+}
+.link {
+    margin: 0px 10px;
+    
+}
+.link:hover {
+    color: rgb(179, 179, 8);
+    
+}
+.link:active {
+    color: black;
+}
+.lesson7 {
+    font-weight: 800;
+    background-color: rgb(207, 191, 171);
+    text-align: center;
+    padding: 40px;
+    font-size: 0;
+    margin-left: -15px;
+}
+.button {
+    background-color: violet;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-left: 15px;
+}
+.button span {
+    display: inline-block;
+    background: url("../img/mark.png") 0 0 no-repeat;
+    padding-left: 36px;
+}
+.button:hover{
+    background-color: blue;
+    background-position: 10px 0;
+    border: 1px solid black;
+    box-shadow: 0 0 2px 2px rgb(82, 59, 59);
+}
+.button:hover span{
+    background-position: 3px 0;
+}
+.button:visited {
+    background-color: gray;
+}
+.button:focus {
+    background-color: blueviolet;
+}
+.text {
+    display: none;
+    border: 2px solid black;
+    padding: 0 10px;
+    margin: 20px;
+}
+.text:target {
+    display: block;
+}
+.appear {
+    padding: 10px;
+    margin: 20px;
+    background-color: chocolate;
+    border: 2px solid black;
+}
+.appear_child {
+    display: none;
+}
+.appear:hover .appear_child {
+    display: block;
+}
+
+.text *:first-child {
+    background-color: chocolate;
+}
+.text p:first-of-type {
+    background-color: aquamarine;
+}
+.text p:last-child {
+    text-transform: uppercase;
+}
+.text p:nth-child(3) {
+    background-color: cadetblue;
+}
+.text p:not(:last-child) {
+    margin-bottom: 10px;
+}
+.indent {
+    border: 3px solid black;
+    margin: 20px;
+    padding: 0 10px;
+}
+.title {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 60px;
+}
+.indent > *:last-child {
+    margin-bottom: 0px;
+}
+.some_list {
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    background-color: bisque;
+}
+.some_list li::before {
+    background: url("../img/mark.png") 0 0 no-repeat;
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: bottom;
+}
+.some_list *:not(:last-child) {
+    margin-bottom: 10px;
+}
+div.second-part {
+    font-family: "Proximanova", sans-serif;
+    font-weight: 400;
+    color: #2b2929;
+    font-style: normal;
+    text-transform: none;
+    max-width: 1110px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+.sub-title-1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: left;    
+}
+div.photo-living-room {
+    max-width: 1070px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.text1 {
+    text-align: left;
+    line-height: 30px;
+}
+.text2 {
+    font-size: 20px;
+    text-align: left;
+    line-height: 28px;
+}
+div.separate-text {
+    margin-bottom: 30px;
+}
+div.text1 {
+    margin-bottom: 40px;
+}
+.list {
+    padding-left: 30px;
+    margin-bottom: 40px;
+    text-align: left;
+    line-height: 30px;
+}
+.list li:not(:last-child) {
+    margin-bottom: 5px;
+}
+.list li::before {
+    background: url("../img/mark.png") 0 0 no-repeat;
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+.portfolio {
+    background-color: black;
+    padding: 120px 0;
+    font-family: "Exo", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: -1px;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+}
+.portfolio h4 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.portfolio_title::after {
+    content: "";
+    height: 1px;
+    display: block;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
+    max-width: 401px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.portfolio_text {
+    max-width: 902px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.portfolio_block {
+    font-family: "Orbitron", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0;
+}
+.portfolio_block span::after {
+    content: "";
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-left: 60px;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(66, 255, 0, 1) 51%, rgba(36, 0, 255, 1) 100%);
+    vertical-align: middle;
+}
+.portfolio_block span:not(:last-child) {
+    margin-right: 60px;
+}
+.footer {
+    max-width: 1040px;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 29px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 50px 300px;
+    text-align: center;
+}
