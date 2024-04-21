@@ -1,0 +1,55 @@
+@import url("reset.css");
+
+body {
+    font-family: "Proximanova", sans-serif;
+    font-weight: 500;
+    background: linear-gradient(90deg, rgba(0,20,36,0.4823179271708683) 0%, rgba(239,244,238,0.9669117647058824) 54%, rgba(0,202,255,1) 96%);
+}
+.header {
+    font-size: 38px;
+    text-align: center;
+    color: brown;
+    background-color: bisque;
+    padding: 20px 10px;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    border-bottom: 10px dashed green;
+    border-top: 10px dashed green;
+}
+.page {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+.img {
+    max-width: 400px;
+    width: 100%;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+.list {
+    padding: 20px;
+    text-align: center;
+}
+.icon {
+    max-width: 100px;
+    width: 100%;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+h2 {
+    margin-bottom: 30px;
+}
+.photo {
+    max-width: 630px;
+    width: 100%;
+}
+.footer {
+    font-size: 29px;
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
