@@ -1,0 +1,7 @@
+@import url("reset.css");
+body {
+    font-family: "Proximanova", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(0,20,36,0.4823179271708683) 0%, rgba(239,244,238,0.9669117647058824) 54%, rgba(0,202,255,1) 96%);
+}
