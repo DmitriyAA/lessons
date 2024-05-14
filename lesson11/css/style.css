@@ -1,0 +1,205 @@
+@import url("reset.css");
+body {
+    font-family: "Proximanova", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(0,20,36,0.4823179271708683) 0%, rgba(239,244,238,0.9669117647058824) 54%, rgba(0,202,255,1) 96%);
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+.header {
+    font-size: 24px;
+    padding: 20px;
+}
+.header__link:not(:last-child) {
+    margin-right: 50px;
+}
+.page {
+    padding: 30px;
+    margin: 0 auto;
+    /* margin-right: -50px; */
+}
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.block {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: rgba(190, 37, 37, 0.3);
+    display: inline-block;
+    /* margin-right: 50px; */
+    margin-bottom: 50px;
+}
+.block:not(:last-child) {
+    margin-right: 50px;
+    /* margin-bottom: 50px; */
+}
+.block__item {
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.block__item--transform {
+    transform: translate(-20px, 30px);
+    /* position: relative;
+    top: 10%;
+    left: 10%; */
+}
+.block__item--scale:hover {
+    transform: scale(1.1);
+}
+.block__item--rotate {
+    transform: rotate(80deg);
+}
+.block__item--skew {
+    transform: skew(20deg, 10deg);
+}
+.block__item--matrix:hover {
+    transform: matrix(0.4, 0.9, 0.7, 1, 10, 30);
+}
+.block__item--origin:hover {
+    transform: rotate(10deg);
+    transform-origin: top;
+}
+.block--perspective {
+    perspective: 300px;
+    perspective-origin: top;
+}
+.block__item--perspective {
+    transform: rotateX(60deg);
+}
+.block__item--translate3d {
+    transform: translate3d(10px, 30px, 50px);
+}
+.block__item--scale3d:hover {
+    transform: scale3d(1.2, 1.1, 1.1);    
+}
+.block__item--rotate3d {
+    transform: rotate3d(50, 200, 200, 10deg);
+}
+.block--3dstyle {
+    transform-style: preserve-3d;
+}
+.block__item--style {
+    transform: rotateX(30deg);
+}
+.block__item--backface {
+    backface-visibility: visible;
+    transform: rotateY(115deg);    
+}
+
+.coin__body {
+    position: relative;
+    width: 300px;
+    perspective: 800px;
+}
+.coin__body img {
+    width: 100%;
+}
+.coin__front,
+.coin__back {
+    transition: all 0.5s;
+}
+.coin__front {
+    backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+.coin__back {
+	transform: rotateY(0deg);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.coin__body:hover .coin__front {
+	transform: rotateY(0deg);
+}
+.coin__body:hover .coin__back {
+	transform: rotateY(-180deg);
+}
+.picture {
+    position: relative;
+    height: 1000px;
+    width: 1400px;
+    background: url(../img/beach.jpg) 0 0 / 100% no-repeat;
+    background-size: contain;
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll; */
+}
+.boat__body {
+    position: relative;
+    z-index: 1;
+    top: 600px;
+    left: 450px;
+    width: 900px;
+    height: 150px;
+    background: linear-gradient(180deg, rgba(239,244,238,0.9669117647058824) 68%, rgba(0,0,0,1) 99%);
+    border-radius: 35% 47% 20% 27% / 0% 1% 41% 85%;
+    border: 2px solid black;
+}
+.boat__porthole {
+    position: relative;
+    top: 25px;
+    left: 0;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 40px;
+}
+.boat__porthole:hover {
+    background-color: yellow;
+}
+.boat__cabin {
+    position: relative;
+    z-index: 3;
+    width: 500px;
+    height: 150px;
+    top: 300px;
+    left: 650px;
+    background-color: blue;
+    border-radius: 47% 21% 10% 10% / 68% 27% 0% 0% ;
+}
+.boat__window {
+    position: relative;
+    z-index: 3;
+    width: 400px;
+    height: 100px;
+    top: 180px;
+    left: 700px;
+    background-color: gray;
+    border-radius: 47% 21% 10% 10% / 68% 27% 0% 0% ;
+}
+.boat__sail {
+    position: relative;
+    z-index: 1;
+    width: 100px;
+    height: 370px;
+    bottom: 330px;
+    left: 830px;
+    background-color: white;
+    border-radius: 100% 0% 0% 100% / 100% 0% 100% 0% ;
+}
+.boat__mast {
+    position: relative;
+    z-index: 3;
+    width: 8px;
+    height: 430px;
+    bottom: 750px;
+    left: 930px;
+    background-color: rgb(101, 76, 76);
+}
+.boat {
+    perspective: 200px;
+    transform: rotateZ(1deg);
+}

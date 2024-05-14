@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 11</title>   
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <a class="header__link" href="#2d">2D трансформації</a>
+            <a class="header__link" href="#3d">3D трансформації</a>
+            <a class="header__link" href="#boat">Яхта</a>            
+        </header>
+        <main class="page">
+            <h2 class="title" id="2d">2D трансформації</h2>
+            <div class="block">
+                <div class="block__item block__item--transform">translate(-20px, 30px)</div>
+            </div>
+            <div class="block">
+                <div class="block__item block__item--scale">scale(1.1)</div>
+            </div>
+            <div class="block">
+                <div class="block__item block__item--rotate">rotate(80deg)</div>
+            </div>
+            <div class="block">
+                <div class="block__item block__item--skew">skew(20deg, 10deg)</div>
+            </div>
+            <div class="block">
+                <div class="block__item block__item--matrix">matrix(0.4, 0.9, 0.7, 1, 10, 30)</div>
+            </div>
+            <div class="block">
+                <div class="block__item block__item--origin">origin: top</div>
+            </div>
+            <div class="block block--perspective">
+                <div class="block__item block__item--perspective">perspective-rotateX(60deg)</div>
+            </div>
+            <h2 class="title" id="3d">3D трансформації</h2>
+            <div class="block">
+                <div class="block__item block__item--translate3d"><p>translate3d(10px, 30px, 50px)</p></div>
+            </div>
+            <div class="block">
+                <div class="block__item block__item--scale3d"><p>scale3d(1.2, 1.1, 1.1)</p></div>
+            </div>
+            <div class="block">
+                <div class="block__item block__item--rotate3d"><p>rotate3d(50, 200, 200, 10deg)</p></div>
+            </div>
+            <div class="block block--3dstyle">
+                <div class="block__item block__item--style"><p>transform-style: preserve-3d</p></div>
+            </div>
+            <div class="block">
+                <div class="block__item block__item--backface"><p>rotateX(30deg)</p></div>
+            </div>
+            
+            <div class="coin">
+                <div class="coin__body">
+                    <div class="coin__back">
+                        <img src="img/coin1.svg" alt="">
+                    </div>
+                    <div class="coin__front">
+                        <img src="img/coin2.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="picture" id="boat">                
+                <div class="boat">
+                    <div class="boat__body">
+                        <div class="boat__porthole"></div>
+                        <div class="boat__porthole"></div>
+                        <div class="boat__porthole"></div>
+                        <div class="boat__porthole"></div>
+                        <div class="boat__porthole"></div>
+                    </div>
+                    <div class="boat__cabin"></div>
+                    <div class="boat__window"></div>
+                    <div class="boat__sail"></div>
+                    <div class="boat__mast"></div>
+                </div>                
+            </div>
+        </main>
+        <footer>
+            <p class="footer">Інформація</p>
+        </footer>
+    </div>
+</body>
+</html>
