@@ -1,0 +1,246 @@
+@import url("reset.css");
+body {
+    font-family: "Proximanova", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+    background: linear-gradient(90deg, rgba(0,20,36,0.4823179271708683) 0%, rgba(239,244,238,0.9669117647058824) 54%, rgba(0,202,255,1) 96%);
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+}
+.header {
+    font-size: 24px;
+    padding: 20px;
+}
+.header__link:not(:last-child) {
+    margin-right: 50px;
+}
+.page {
+    padding: 30px;
+    margin: 0 auto;    
+}
+.picture {
+    position: relative;
+    height: 1000px;
+    width: 1400px;
+    background: url(../img/beach.jpg) 0 0 / 100% no-repeat;
+    background-size: contain;
+}
+.boat__body {
+    position: relative;
+    z-index: 2;
+    top: 600px;
+    left: 450px;
+    width: 900px;
+    height: 150px;
+    background: linear-gradient(180deg, rgba(239,244,238,0.9669117647058824) 68%, rgba(0,0,0,1) 99%);
+    border-radius: 35% 47% 20% 27% / 0% 1% 41% 85%;
+    border: 2px solid black;
+}
+.boat__porthole {
+    position: relative;
+    top: 25px;
+    left: 0;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 40px;
+}
+.boat__cabin {
+    position: relative;
+    z-index: 3;
+    width: 500px;
+    height: 150px;
+    top: 300px;
+    left: 650px;
+    background-color: blue;
+    border-radius: 47% 21% 10% 10% / 68% 27% 0% 0% ;
+}
+.boat__window {
+    position: relative;
+    z-index: 3;
+    width: 400px;
+    height: 100px;
+    top: 180px;
+    left: 700px;
+    background-color: gray;
+    border-radius: 47% 21% 10% 10% / 68% 27% 0% 0% ;
+}
+.boat__sail {
+    position: relative;
+    z-index: 3;
+    width: 100px;
+    height: 370px;
+    bottom: 330px;
+    left: 830px;
+    background-color: white;
+    border-radius: 100% 0% 0% 100% / 100% 0% 100% 0% ;
+}
+.boat__mast {
+    position: relative;
+    z-index: 3;
+    width: 8px;
+    height: 430px;
+    bottom: 750px;
+    left: 930px;
+    background-color: rgb(101, 76, 76);
+}
+.boat {
+    perspective: 200px;
+    transform: rotateZ(1deg);
+}
+.sky {
+    display: block;
+    overflow: hidden;
+}
+.cloud:nth-child(1) {
+    position: relative;
+    animation-name: cloud;
+    animation-duration: 49s;
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    bottom: 0px;
+    left: -500px;
+}
+.cloud:nth-child(2) {
+    position: relative;
+    animation-name: cloud;
+    animation-duration: 44s;
+    transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    top: 0px;
+    left: -500px;
+}
+.cloud:nth-child(3) {
+    animation-name: cloud;
+    animation-duration: 56s;
+    transition-timing-function: cubic-bezier(0.680, 0.080, 0.445, 0.790);
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    position: relative;
+    z-index: 3;
+    top: 0px;
+    left: -500px;
+}
+@keyframes cloud {
+    0% {
+        left: -400px;
+    }
+    50% {
+        left: 50px;
+    }
+    100% {left: 650px;}
+}
+.flag {
+    background: url(../img/flag.png) 0 0 / 100% no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    top: 380px;
+    left: 938px;
+    z-index: 4;
+    animation-name: flag;
+    animation-duration: 35s;
+    animation-fill-mode: forwards;
+}
+@keyframes flag {
+    0% {
+        top: 380px;
+    }
+    100% {top: 19px;}
+}
+.helm{
+    perspective: 100px;
+    transform: rotateY(100deg);
+    position: absolute;
+    top: 570px;
+    left: 490px;
+    z-index: 1;
+}
+.helm-body {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(210, 202, 218);
+    border: 10px dashed black;
+    animation-name: helm-rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes helm-rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {transform: rotateZ(360deg);
+    }
+}
+.boat__porthole {
+    animation-name: porthole-color;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes porthole-color {
+    0% {
+        background-color: darkgrey;
+    }
+    100% {background-color: rgb(213, 213, 65);
+    }}
+.boat__porthole:hover {
+    animation-play-state: paused;
+}
+.people__sailor {
+    position: absolute;
+    top: 600px;
+    left: 550px;
+    background: url(../img/pngegg.png) 0 0 / 100% no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 300px;
+}
+.people__girl-1 {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    background: url(../img/girl-1.png) 0 0 / 100% no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+}
+.people__girl-2{
+    position: absolute;
+    top: 600px;
+    left: 50px;
+    background: url(../img/girl-2.png) 0 0 / 100% no-repeat;
+    background-size: contain;
+    width: 250px;
+    height: 250px;
+    animation-name: girl-2-jumping;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.people__girl-3{
+    position: absolute;
+    top: 600px;
+    left: 1180px;
+    background: url(../img/girl-3.png) 0 0 / 100% no-repeat;
+    background-size: contain;
+    width: 130px;
+    height: 130px;
+}
+@keyframes girl-2-jumping {
+    0% {
+        top: 600px;
+    }
+    100% {top: 650px;}
+}
+
