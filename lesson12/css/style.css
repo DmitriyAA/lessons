@@ -97,6 +97,9 @@ body {
     display: block;
     overflow: hidden;
 }
+.cloud {
+    width: 100px;
+}
 .cloud:nth-child(1) {
     position: relative;
     animation-name: cloud;
@@ -104,8 +107,6 @@ body {
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-    bottom: 0px;
-    left: -500px;
 }
 .cloud:nth-child(2) {
     position: relative;
@@ -114,8 +115,6 @@ body {
     transition-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.335);
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-    top: 0px;
-    left: -500px;
 }
 .cloud:nth-child(3) {
     animation-name: cloud;
@@ -124,9 +123,6 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
     position: relative;
-    z-index: 3;
-    top: 0px;
-    left: -500px;
 }
 @keyframes cloud {
     0% {
