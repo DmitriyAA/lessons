@@ -65,7 +65,7 @@ body {
     height: 30px;
 }
 .social-top-header__link:hover {
-    scale: 1.05;
+    transform: scale(1.05);
 }
 .lang-top-header {
     cursor: pointer;
