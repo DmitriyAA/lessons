@@ -158,10 +158,10 @@ body {
     padding-left: 15px;
     padding-right: 50px;
 }
-.search-middle-header__input::-webkit-search-decoration,
+/* .search-middle-header__input::-webkit-search-decoration,
 .search-middle-header__input::-webkit-search-cancel-button {
     display: none;
-}
+} */
 .search-middle-header__input:focus::placeholder {
     opacity: 0;
 }
