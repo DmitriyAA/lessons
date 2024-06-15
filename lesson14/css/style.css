@@ -273,6 +273,7 @@ body {
     flex-direction: column;
     row-gap: 10px;
     align-items: center;
+    flex-shrink: 0;
     justify-content: space-between;
     padding: 20px;
     transition: all 0.2s;
@@ -351,10 +352,11 @@ body {
     width: 100%;
     display: flex;
     padding: 13px 20px;    
-    max-width: 142px;
+    flex-basis: 142px;
     align-items: center;
     border-radius: 8px;
     justify-content: center;
+    flex-shrink: 0;
     background-color: #ffbc57;
     gap: 10px;
     color: #fff;
@@ -407,8 +409,7 @@ body {
     position: relative;
     cursor: pointer;
     display: flex;
-    gap: 10px;
-    
+    gap: 10px;    
 }
 .list-payment__input {
     position: absolute;
@@ -436,6 +437,7 @@ body {
     gap: 10px;    
     align-items: center;   
     transition: all 0.2s;
+    flex-shrink: 0;
 }
 .list-payment__input:checked + .list-payment__text::before {    
     background: #FFBC57 url("../img/vector-pay.svg") center no-repeat;
