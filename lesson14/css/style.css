@@ -356,7 +356,6 @@ body {
     display: flex;
     padding: 13px 20px;    
     flex-basis: 142px;
-    height: 50px;
     align-items: center;
     border-radius: 8px;
     justify-content: center;
@@ -440,11 +439,9 @@ body {
     font-weight: 400;
     line-height: 24px;
     display: flex;
-    flex-shrink: 0;
     gap: 10px;    
     align-items: center;   
-    transition: all 0.2s;
-    flex-shrink: 0;
+    transition: all 0.2s;    
 }
 .list-payment__input:checked + .list-payment__text::before {    
     background: #FFBC57 url("../img/vector-pay.svg") center no-repeat;
