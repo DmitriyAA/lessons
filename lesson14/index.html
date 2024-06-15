@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 14</title>
+</head>
+<body> 
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">Lesson 14</h1>
+        </header>
+        <main>
+            <div class="items">
+                <div class="item">
+                    <label class="item__label" for="input-01">Введіть своє ім'я</label>
+                    <input class="item__input" id="input-01" name="form[]" placeholder="Введіть своє ім'я" type="text">
+                </div>
+                <div class="item">
+                    <label class="item__label" for="input-01">Введіть свою пошту</label>
+                    <input required class="item__input" id="input-01" name="form[]" placeholder="Введіть свою пошту" type="email">
+                </div>
+                <div class="item">
+                    <input name="form[]" class="item__input" placeholder="Введіть свій номер телефону" type="tel">
+                </div>
+                <div class="item">
+                    <input name="form[]" class="item__input" placeholder="Введіть число" type="number">
+                </div>
+                <div class="item">
+                    <input name="form[]" class="item__input" placeholder="Введіть число" type="number">
+                </div>
+                <div class="item">
+                    <input name="form[]" id="input-color" value="#76501d" class="item__input item__input--color" placeholder="Введіть число" type="color">
+                    <label class="item__label" for="input-color">Оберіть колір</label>
+                </div>
+                <div class="item">
+                    <input name="form[]" class="item__input" placeholder="Пошук" type="search">
+                </div>
+                <div class="item">
+                    <input name="form[]" class="item__input" type="date">
+                </div>
+                <div class="item">
+                    <input name="form[]" class="item__input" value="25" type="range">
+                </div>
+                <div class="item__checkbox checkbox">
+                    <div class="checkbox__row">
+                        <label class="checkbox__label" for="check">Lorem ivhvhvj vjhbhvhpsum</label>
+                        <input name="form[]" class="checkbox__input" id="check" type="checkbox">
+                    </div>
+                    <div class="checkbox__row">
+                        <label class="checkbox__label" for="check">Lorem ipsum jsbcjbshvh bjbjjcb sbjhb jbjijbj bbjbkncfv</label>
+                        <input name="form[]" class="checkbox__input" id="check" type="checkbox">
+                    </div>
+                    <div class="checkbox__row">
+                        <label class="checkbox__label" for="check">Lorem ipsum</label>
+                        <input name="form[]" class="checkbox__input" id="check" type="checkbox">
+                    </div> 
+                    <fieldset class="form__group">
+                        <legend class="form__title">Улюблена марка авто</legend>
+                        <div class="form__radio radio">
+                            <label class="radio__lable" for="model-01">BMW</label>
+                            <input class="radio__input" checked id="model-01" value="form[]" name="model" type="radio">
+                        </div>
+                        <div class="form__radio radio">
+                            <label class="radio__lable" for="model-02">KIA Sportage</label>
+                            <input class="radio__input" checked id="model-02" value="form[]" name="model" type="radio">                            
+                        </div>
+                        <div class="form__radio radio">
+                            <label class="radio__lable" for="model-03">Skoda</label>
+                            <input class="radio__input" checked id="model-03" value="form[]" name="model" type="radio">                            
+                        </div>
+                    </fieldset>          
+                </div>
+                <div class="item__form-line ">
+                    <input multiple accept=".jpg, .png" id="file" name="some-file" type="file">
+                </div>
+                <div class="item__form-textarea form-textarea ">
+                    <textarea class="form__textarea"></textarea>
+                </div>
+                <div class="item__list list">
+                    <select name="form[]">
+                        <option value="01">Пункт 1</option>
+                        <option selected value="02">Пункт 2</option>
+                        <option value="03">Пункт 3</option>
+                        <option value="04">Пункт 4</option>
+                        <option value="05">Пункт 5</option>
+                    </select>
+                </div>
+                <div class="item__button button">
+                    <button class="button__button" type="button">Кнопка</button>
+                    <button class="button__reset" type="reset">Очистити форму</button>
+                    <button class="button__submit" type="submit">Відправити форму</button>
+                </div>         
+            </div>
+            <div class="form-order">
+                <div class="form-order__info info">
+                    <h2 class="info__title">Інформація про покупця</h2>
+                    <div class="info__body-info body-info">
+                        <div class="body-info__section">
+                            <input name="form[]" placeholder="Прізвище" class="body-info__input" type="text">
+                            <input name="form[]" placeholder="Ім'я" class="body-info__input" type="text">
+                            <input name="form[]" placeholder="По батькові" class="body-info__input" type="text">
+                        </div>
+                        <div class="body-info__section">
+                            <input name="form[]" placeholder="Контактний телефон" class="body-info__input" type="tel">
+                            <input name="form[]" placeholder="E-mail" class="body-info__input" type="email">
+                        </div>
+                    </div>
+                    <div class="info__checkbox-info checkbox-info">
+                        <label class="checkbox-info__label">
+                            <input name="form[]" class="checkbox-info__input" type="checkbox">
+                            <span class="checkbox-info__text">Отримуватиме замовлення інша людина</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-order__delivery delivery">
+                    <h2 class="delivery__title">Вибір способу доставки</h2>
+                    <div class="delivery__checkbox-delivery checkbox-delivery">
+                        <label class="checkbox-delivery__label">
+                            <input name="delivery" id="w" class="checkbox-delivery__input" type="radio">
+                            <div class="checkbox-delivery__text-way">Самовивіз із магазину
+                                <span class="checkbox-delivery__text-price">Бесплатно</span>    
+                            </div>                                                        
+                        </label>
+                        <label class="checkbox-delivery__label">
+                            <input name="delivery" class="checkbox-delivery__input" type="radio">
+                            <div class="checkbox-delivery__text-way checkbox-delivery__text-way--np">Доставка Нова Пошта
+                                <span class="checkbox-delivery__text-price">від 500 грн</span>
+                            </div>                            
+                        </label>
+                        <label class="checkbox-delivery__label">
+                            <input name="delivery" class="checkbox-delivery__input" type="radio">
+                            <div class="checkbox-delivery__text-way checkbox-delivery__text-way--courier">Доставка кур'єром
+                                <p class="checkbox-delivery__text-price">від 200 грн</p>
+                            </div>                            
+                        </label>
+                    </div>
+                    <div class="delivery__address-delivery address-delivery">
+                        <img src="img/map.svg" alt="іконка">
+                        <div class="address-delivery__text-address text-address">
+                            <span class="text-address__schedule">Графік роботи: щодня з 9:00 до 18:00</span>
+                            <span class="text-address__address">м. Київ, пров. Ізяславський 52, пов. 2</span>
+                        </div>
+                        <a href="#" class="address-delivery__button-map">На мапі</a>
+                    </div>                    
+                </div> 
+                <div class="form-order__payment payment">
+                    <h2 class="payment__title">Вибір способу оплати</h2>
+                    <div class="payment__list-payment list-payment">
+                        <label class="list-payment__item">                                                                                
+                            <input type="radio" id="pay-1" name="payment" class="list-payment__input">
+                            <span class="list-payment__text">Готівкою при отриманні (Післясплата)</span>                            
+                        </label>
+                        <label class="list-payment__item">                                                                                
+                            <input type="radio" id="pay-1" name="payment" class="list-payment__input">
+                            <span class="list-payment__text">Оплата карткою на сайті</span>
+                            <img class="list-payment__logo" src="img/1.svg" alt="лого MasterCard">
+                            <img class="list-payment__logo" src="img/2.svg" alt="лого VISA">
+                        </label>
+                        <label class="list-payment__item">                                                                                
+                            <input type="radio" id="pay-1" name="payment" class="list-payment__input">
+                            <span class="list-payment__text">Privat Pay</span>
+                            <img class="list-payment__logo" src="img/privat-pay-logo.svg" alt="лого privat pay">
+                        </label>
+                        <label class="list-payment__item">                                                                                
+                            <input type="radio" id="pay-1" name="payment" class="list-payment__input">
+                            <span class="list-payment__text">Кредит від Krovato</span>
+                        </label>
+                        <label class="list-payment__item">                                                                                
+                            <input type="radio" id="pay-1" name="payment" class="list-payment__input">
+                            <span class="list-payment__text">Оплата частинами ПриватБанк</span>
+                            <img class="list-payment__logo" src="img/privaty-credit-logo.svg" alt="privaty credit logo">
+                        </label>
+                        <label class="list-payment__item">                                                                                
+                            <input type="radio" id="pay-1" name="payment" class="list-payment__input">
+                            <span class="list-payment__text">Оплата частинами МоноБанк</span>
+                            <img class="list-payment__logo" src="img/mono-bank-logo.svg" alt="mono bank logo">
+                        </label>
+                    </div>
+                </div>
+                <div class="form-order__comment comment">
+                    <h2 class="comment__title">Коментар до замовлення</h2>
+                    <textarea name="form[]" class="comment__text" placeholder="Ваш коментар"></textarea>
+                    <button class="comment__button" type="submit">Оформити замовлення</button>
+                </div>                
+            </div>
+        </main>
+        <footer>
+            <p class="footer">Інформація</p>
+        </footer>
+    </div>
+</body>
+</html>
